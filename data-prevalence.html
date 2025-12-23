@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data & Prevalence</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<header class="banner" style="height:700px">
+  <div class="banner-overlay">
+    <h1 class="page-title">CTE Data & Prevalence</h1>
+    <p style="padding-top:10px;">Statistics and trends on CTE in sports and youth</p>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<main class="content" style="display:flex; flex-direction: column; gap:60px;">
+
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:40px;">
+    <div style="flex:1 1 350px;">
+      <h2 style="color:#E57C5F;">Risk in Youth Sport</h2>
+      <p>Many young athletes are exposed to repeated head impacts, most often in high contact sports such as football or hockey, and a lot without showing immediate symptoms-which may not prompt families to help as much as they should. Studies show that football and hockey have the highest rates of concussions in youth sports. These sports are not small either, hockey having upwards of 400,000 players in the U.S. alone.</p>
+      <p>In football, players who played non-contact football (flag football) received head collisions 15 times less than those who played the full contact version of the sport. Another study showed than players were 23 times more likely to receive head trauma when playing the sport.</p>
+      <p>Awareness in CTE is essential in order to improve safety protocols, equipment, and standards.</p>
+    </div>
+    <div style="flex:1 1 350px;">
+      <img src="assets/images/youth-sports.webp" alt="Youth sports concussion risk" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <p style="text-align:center; font-size:0.9rem;">Youth athletes face a high risk of sub-concussive impacts during games and practice.</p>
+    </div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:40px; flex-direction: row-reverse;">
+    <div style="flex:1 1 350px;">
+      <h2 style="color:#E57C5F;">Professional Sports Data</h2>
+      <p>Former NFL players show much higher rates of CTE than the general population. Studies of some brains indicate that repeated concussions correlate with the chances of getting CTE. Boston University did a study in which 63 out of 152 (41.4%) of brain donors had CTE. This study was all done with former contact sport athletes.</p>
+      <p>This data highlights the need for better measures and ongoing research in both youth and professional sports.</p>
+      <p>Another study conducted said that 71.4% of people with CTE were men which had played contact sports such as football (American) and ice hockey.</p>
+    </div>
+    <div style="flex:1 1 350px;">
+      <img src="assets/images/nfl-cte-lawsuit.webp" alt="NFL CTE lawsuit" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <p style="text-align:center; font-size:0.9rem;">High-profile cases show the seriousness of repeated head trauma in professional sports.</p>
+    </div>
+  </div>
+
+</main>
+
+<div class="divider"></div>
+
+<div class="button-row" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='symptoms.html'">Symptoms</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='factors.html'">Factors</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='help.html'">Help</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='teens.html'">Teens</button>
+</div>
+
+<div class="divider"></div>
+
+<footer class="footer" style="padding-bottom: 100px;">
+  <div class="footer-content">
+    <div class="text-left">
+      <p style="font-size: 12px;">
+        © 2025 CTE Website (https://).<br><br>
+        All rights reserved. Unauthorized use of this code is prohibited. <br><br>
+        We are working hard to improve your user experience.
+      </p>
+    </div>
+
+    <div class="text-right">
+      <p style="font-size: 12px;"><a href="./introduction.html" style="color: #E57C5F; text-decoration: none;">Home</a></p>
+      <p style="font-size: 12px;"><a href="./data-prevalence.html" style="color: #E57C5F; text-decoration: none;">Introduction & Data</a></p>
+      <p style="font-size: 12px;"><a href="./factors.html" style="color: #E57C5F; text-decoration: none;">Causes & Risk Factors</a></p>
+      <p style="font-size: 12px;"><a href="./help.html" style="color: #E57C5F; text-decoration: none;">Help & Resources</a></p>
+      <p style="font-size: 12px;"><a href="./template.html" style="color: #E57C5F; text-decoration: none;">Day in the Life</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+fetch("navigation.html")
+.then(response => response.text())
+.then(data => { document.getElementById("nav-placeholder").innerHTML = data; });
+</script>
+</body>
+</html>

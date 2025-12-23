@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1869455728729943"
+     crossorigin="anonymous"></script>	
+<link rel="icon" type="image/png" href="./assets/images/favicon.png">
+  
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTE Project</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+<!-- Nav Bar -->
+<div id="nav-placeholder"></div>
+
+<!-- Banner --> 
+<header class="banner" style="height: 400px">
+  <div class="banner-overlay">
+    <h1 class="page-title">Page Name</h1>
+    <div class="title-underline"></div>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<div class="button-row">
+	<button style="width: 510px" class="button-outlined" onclick="window.location.href='./index.html'">Home</button>
+	<button style="width: 510px" class="button-outlined" onclick="window.location.href='.index.html'">Other</button>
+</div>
+
+<div class="divider"></div>
+
+<main class="content">
+	<div class="text-left">
+		<p>Sample Text</p>
+		<p style="font-weight: bold; color: #E57C5F; text-decoration: none;">Bold Sample Text</p>
+	</div>
+	
+	<div class="text-center">
+		<p>Sample Text</p>
+		<p style="font-weight: bold; color: #E57C5F; text-decoration: none;">Bold Sample Text</p>
+	</div>
+	
+	<div class="text-right">
+		<p>Sample Text</p>
+		<p style="font-weight: bold; color: #E57C5F; text-decoration: none;">Bold Sample Text</p>
+	</div>
+</main>
+
+<div class="divider"></div>
+
+<!-- Footer DO NOT EDIT -->
+<footer class="footer" style="padding-bottom: 100px;">
+  <div class="footer-content">
+    <div class="text-left">
+      <p style="font-size: 12px;">
+        © 2025 CTE Website (https://).<br><br>
+        All rights reserved. Unauthorized use of this code is prohibited. <br><br>
+        We are working hard to improve your user experience.
+      </p>
+    </div>
+
+    <div class="text-right">
+      <p style="font-size: 12px;"><a href="./index.html" style="font-weight: bold; color: #E57C5F; text-decoration: none;">Home</a></p>
+      <p style="font-size: 12px;"><a href="" style="font-weight: bold; color: #E57C5F; text-decoration: none;">Introduction & Data</a></p>
+      <p style="font-size: 12px;"><a href="" style="font-weight: bold; color: #E57C5F; text-decoration: none;">Causes & Risk Factors</a></p>
+      <p style="font-size: 12px;"><a href="" style="font-weight: bold; color: #E57C5F; text-decoration: none;">Help & Resources</a></p>
+      <p style="font-size: 12px;"><a href="" style="font-weight: bold; color: #E57C5F; text-decoration: none;">Day in the Life</a></p>
+    </div>
+  </div>
+
+</footer>
+</body>
+
+<script>
+  fetch("./navigation.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script>
+</html>

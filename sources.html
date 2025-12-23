@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sources & References</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<header class="banner" style="height:700px">
+  <div class="banner-overlay">
+    <h1 class="page-title">Sources & References</h1>
+    <p style="padding-top:10px;">Citations for all the data, images, and research presented</p>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<main class="content" style="display:flex; flex-direction: column; gap:60px;">
+<div style="padding:40px 0;">
+  
+  <!-- Centered Title -->
+  <h2 style="color:#E57C5F; text-align:center;">Works Cited</h2>
+
+  <!-- Two-column content -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin-top:20px;">
+    
+    <ul style="padding-left:20px; text-align:left; flex:1 1 300px; max-width:350px;">
+      <li>
+        <em>Chronic Traumatic Encephalopathy.</em> Encyclopædia Britannica.
+      </li>
+      <li>
+        Headway. <em>Friends: 5 Ways to Support Someone with a Brain Injury.</em>
+      </li>
+      <li>
+        Herpen, Robert. <em>CTE Identified in Brains of Young Athletes.</em>
+      </li>
+    </ul>
+
+    <ul style="padding-left:20px; text-align:left; flex:1 1 300px; max-width:350px;">
+      <li>
+        CNN. <em>Tony Dorsett: “I’m Going to Beat This.”</em>
+      </li>
+      <li>
+        Centers for Disease Control and Prevention. <em>About Repeated Head Impacts.</em>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+
+
+
+
+</main>
+
+<div class="divider"></div>
+
+<div class="button-row" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='data-prevalence.html'">Data & Prevalence</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='symptoms.html'">Symptoms</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='factors.html'">Factors</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='help.html'">Help</button>
+</div>
+
+<div class="divider"></div>
+
+<main class="content">
+  <div style="position: relative; width:100%; height:900px;">
+    
+    <iframe
+      src="https://docs.google.com/document/d/e/2PACX-1vT4q5mjujikymZo6AB3WCCVcWsLNPsxaJ7-HkfgkhlvnP3pgrGGxdy4D7dYGhBIa6ZO42kc6GYGGxac/pub?embedded=true"
+      style="width:100%; height:100%; border:none;"
+    ></iframe>
+
+    <a
+      href="https://docs.google.com/document/d/1X0kxplRj_MSTNwERskCRB2y_CsZvOVUkYt3z7_CPedA/"
+      target="_blank"
+      style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:10;
+      "
+      aria-label="Open source document"
+    ></a>
+
+  </div>
+</main>
+
+<div class="divider"></div>
+
+<footer class="footer" style="padding-bottom: 100px;">
+  <div class="footer-content">
+    <div class="text-left">
+      <p style="font-size: 12px;">
+        © 2025 CTE Website (https://).<br><br>
+        All rights reserved. Unauthorized use of this code is prohibited. <br><br>
+        We are working hard to improve your user experience.
+      </p>
+    </div>
+    <div class="text-right">
+      <p style="font-size: 12px;"><a href="./introduction.html" style="color: #E57C5F; text-decoration: none;">Home</a></p>
+      <p style="font-size: 12px;"><a href="./data-prevalence.html" style="color: #E57C5F; text-decoration: none;">Introduction & Data</a></p>
+      <p style="font-size: 12px;"><a href="./factors.html" style="color: #E57C5F; text-decoration: none;">Causes & Risk Factors</a></p>
+      <p style="font-size: 12px;"><a href="./help.html" style="color: #E57C5F; text-decoration: none;">Help & Resources</a></p>
+      <p style="font-size: 12px;"><a href="./template.html" style="color: #E57C5F; text-decoration: none;">Day in the Life</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+fetch("navigation.html")
+.then(response => response.text())
+.then(data => { document.getElementById("nav-placeholder").innerHTML = data; });
+</script>
+</body>
+</html>

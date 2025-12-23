@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Causes & Risk Factors</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<header class="banner" style="height:700px">
+  <div class="banner-overlay">
+    <h1 class="page-title">Causes & Risk Factors</h1>
+    <p style="padding-top:10px;">What contributes to CTE in athletes and others</p>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<main class="content" style="display:flex; flex-direction: column; gap:60px;">
+
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:40px;">
+    <div style="flex:1 1 350px;">
+      <h2 style="color:#E57C5F;">Repeated Head Trauma</h2>
+      <p>Multiple concussions or sub-concussive impacts are the primary risk factors for CTE. Sports like football, hockey, and boxing are especially high risk, due to the agression and level of impacts in the sports.</p>
+    </div>
+    <div style="flex:1 1 350px;">
+      <img src="assets/images/football-impact.jpg" alt="Football impact" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <p style="text-align:center; font-size:0.9rem;">Repeated impacts in contact sports increase long-term risk.</p>
+    </div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:40px; flex-direction: row-reverse;">
+    <div style="flex:1 1 350px;">
+      <h2 style="color:#E57C5F;">Genetics & Other Factors</h2>
+      <p>Some individuals may have higher susceptibility to brain degeneration due to genetics or prior neurological conditions. Age, sport intensity, and protective equipment also play roles.</p>
+    </div>
+    <div style="flex:1 1 350px;">
+      <img src="assets/images/brain-scan.webp" alt="Brain scan" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <p style="text-align:center; font-size:0.9rem;">Brain imaging studies reveal structural changes linked to repeated trauma.</p>
+    </div>
+  </div>
+
+</main>
+
+<div class="divider"></div>
+
+<div class="button-row" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='data-prevalence.html'">Data & Prevalence</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='symptoms.html'">Symptoms</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='help.html'">Help</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='teens.html'">Teens</button>
+</div>
+
+<div class="divider"></div>
+
+<footer class="footer" style="padding-bottom: 100px;">
+  <div class="footer-content">
+    <div class="text-left">
+      <p style="font-size: 12px;">
+        © 2025 CTE Website (https://).<br><br>
+        All rights reserved. Unauthorized use of this code is prohibited. <br><br>
+        We are working hard to improve your user experience.
+      </p>
+    </div>
+    <div class="text-right">
+      <p style="font-size: 12px;"><a href="./introduction.html" style="color: #E57C5F; text-decoration: none;">Home</a></p>
+      <p style="font-size: 12px;"><a href="./data-prevalence.html" style="color: #E57C5F; text-decoration: none;">Introduction & Data</a></p>
+      <p style="font-size: 12px;"><a href="./factors.html" style="color: #E57C5F; text-decoration: none;">Causes & Risk Factors</a></p>
+      <p style="font-size: 12px;"><a href="./help.html" style="color: #E57C5F; text-decoration: none;">Help & Resources</a></p>
+      <p style="font-size: 12px;"><a href="./template.html" style="color: #E57C5F; text-decoration: none;">Day in the Life</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+fetch("navigation.html")
+.then(response => response.text())
+.then(data => { document.getElementById("nav-placeholder").innerHTML = data; });
+</script>
+</body>
+</html>

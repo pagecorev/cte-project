@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day in the Life</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<header class="banner" style="height:700px">
+  <div class="banner-overlay">
+    <h1 class="page-title">Day in the Life</h1>
+    <p style="padding-top:10px;">A look at how CTE impacts daily life for teens and athletes</p>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<main class="content" style="display:flex; flex-direction: column; gap:60px;">
+
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:40px;">
+    <div style="flex:1 1 350px;">
+      <h2 style="color:#E57C5F;">Daily Challenges</h2>
+      <p>CTE can affect school, social life, and sports participation. Teens may struggle with concentration, memory, and emotional regulation.</p>
+      <p>Many people suggest getting therapy, especially in younger people as they are more susceptible to the drastic emotional changes.</p>
+    </div>
+    <div style="flex:1 1 350px;">
+      <img src="assets/images/family-impact.webp" alt="Family impact" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <p style="text-align:center; font-size:0.9rem;">Family support plays a critical role in managing daily challenges.</p>
+    </div>
+  </div>
+  
+  <div style="flex:1 1 350px;">
+      <h2 style="color:#E57C5F;">How Friends and Family Can Help</h2>
+      <p>Understanding CTE, and how to improve one's symptoms is key to helping all people struggling with the disease.</p>
+      <p>Suggesting getting help from professionals can give people the support they need to seek help, while helping with daily things such as homework or routine tasks like chores, can help reduce stress allowing some to recover more quickly.</p>
+    </div>
+
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:40px; flex-direction: row-reverse;">
+    <div style="flex:1 1 350px;">
+      <h2 style="color:#E57C5F;">Sports & Activities</h2>
+      <p>Even with CTE, many teens continue participating in sports safely. While this practice is generally okay, it is important for teens to be aware of the concussion protocols and take proper care of their bodies when they participate.</p>
+      <p>Staying healthy during any type of recovery process is also essential. Making sure that people don't do drugs or are involved in risky environments such as parties can also help some recover better, and prevent future cases of CTE.</p>
+    </div>
+    <div style="flex:1 1 350px;">
+      <img src="assets/images/practice-drills.webp" alt="Practice drills" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <p style="text-align:center; font-size:0.9rem;">Modified training and awareness can reduce risk during practice.</p>
+    </div>
+    
+    <div style="flex:1 1 350px;">
+      <h2 style="color:#E57C5F;">Hotlines</h2>
+      <p><strong style="color:#E57C5F">Suicide Hotline (if struggling): </strong> 988</p>
+      <p><strong style="color:#E57C5F">Veterans Crisis Line: </strong> 988 then press 1 or text 838255</p>
+    </div>
+  </div>
+
+</main>
+
+<div class="divider"></div>
+
+<div class="button-row" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='data-prevalence.html'">Data & Prevalence</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='symptoms.html'">Symptoms</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='factors.html'">Factors</button>
+  <button class="button-outlined" style="width:195px" onclick="window.location.href='help.html'">Help</button>
+</div>
+
+<div class="divider"></div>
+
+<footer class="footer" style="padding-bottom: 100px;">
+  <div class="footer-content">
+    <div class="text-left">
+      <p style="font-size: 12px;">
+        © 2025 CTE Website (https://).<br><br>
+        All rights reserved. Unauthorized use of this code is prohibited. <br><br>
+        We are working hard to improve your user experience.
+      </p>
+    </div>
+    <div class="text-right">
+      <p style="font-size: 12px;"><a href="./introduction.html" style="color: #E57C5F; text-decoration: none;">Home</a></p>
+      <p style="font-size: 12px;"><a href="./data-prevalence.html" style="color: #E57C5F; text-decoration: none;">Introduction & Data</a></p>
+      <p style="font-size: 12px;"><a href="./factors.html" style="color: #E57C5F; text-decoration: none;">Causes & Risk Factors</a></p>
+      <p style="font-size: 12px;"><a href="./help.html" style="color: #E57C5F; text-decoration: none;">Help & Resources</a></p>
+      <p style="font-size: 12px;"><a href="./template.html" style="color: #E57C5F; text-decoration: none;">Day in the Life</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+fetch("navigation.html")
+.then(response => response.text())
+.then(data => { document.getElementById("nav-placeholder").innerHTML = data; });
+</script>
+</body>
+</html>
