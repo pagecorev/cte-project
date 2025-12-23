@@ -5,6 +5,12 @@ svg {
   height: 0;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .liquid-glass-filter {
   display: none;
 }
